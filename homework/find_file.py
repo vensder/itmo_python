@@ -5,6 +5,10 @@
 
 import os # import of os module
 
+# check current version of Python
+import platform
+print(platform.python_version())
+
 '''
 /usr/bin/
 /usr/lib/
@@ -20,14 +24,13 @@ dir_path='/usr/bin/'
 find_name='python'
 files_number = 0
 
-'''
-print (os.listdir(dir_path)) # list of files and dirs in current dir
-'''
+#print (os.listdir(dir_path)) # list of files and dirs in current dir
 
-# open file for writing, create it if don't exist, truncate it if exist ('w+')
+
+# open file for writing, create it if doesn't exist, truncate it if exists ('w+')
 fopen_write = open('output_file.txt', 'w+')
 
-current_message = 'We found this files in dir "' + dir_path +'", wich names include substring "python":\n'
+current_message = 'We found these files in dir "' + dir_path +'", which names include substring "python":\n'
 
 print(current_message)
 fopen_write.write(current_message)
