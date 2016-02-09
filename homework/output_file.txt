@@ -1,4 +1,4 @@
-We found this files in dir "/usr/bin/", wich names include substring "python":
+We found these files in dir "/usr/bin/", which names include substring "python":
 python2.7
 python2-pbr
 python3.5m

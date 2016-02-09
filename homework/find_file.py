@@ -28,31 +28,31 @@ files_number = 0
 
 
 # open file for writing, create it if doesn't exist, truncate it if exists ('w+')
-fopen_write = open('output_file.txt', 'w+')
+file_for_writing = open('output_file.txt', 'w+')
 
 current_message = 'We found these files in dir "' + dir_path +'", which names include substring "python":\n'
 
 print(current_message)
-fopen_write.write(current_message)
+file_for_writing.write(current_message)
 
 # Find files with including find_name 
 for file_name in os.listdir(dir_path):
     if file_name.find(find_name) != -1:
         print(file_name)
-        fopen_write.write(file_name + '\n')
+        file_for_writing.write(file_name + '\n')
         # increment number of found files
         #files_number = files_number + 1
         files_number += 1
 
 current_message = '\nNumber of files is:' + str(files_number)
 print(current_message)
-fopen_write.write(current_message)
-fopen_write.close()
+file_for_writing.write(current_message)
+file_for_writing.close()
 
 input("Press Enter to continue...")
 
     
-fopen_read = open('output_file.txt')
+file_for_reading = open('output_file.txt')
 print('\nRead from closed and opened for reading file:\n')
-print(fopen_read.read())
+print(file_for_reading.read())
 
