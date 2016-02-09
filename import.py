@@ -1,5 +1,5 @@
 #!/usr/bin/enf python
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 import os # imrort of os module
 
