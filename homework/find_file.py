@@ -36,7 +36,7 @@ file_for_writing.write(current_message)
 
 # Loop for finding files with include searching word
 for file_name in os.listdir(dir_path):
-    if file_name.find(find_name) != -1:
+    if file_name.find(find_name) != -1 and os.path.isfile(dir_path + '/' + file_name):
         # print current filename on screen
         print(file_name)
         # write current filename to file
@@ -51,7 +51,7 @@ print(current_message)
 file_for_writing.write(current_message)
 file_for_writing.close()
 
-input("Press Enter to continue...")
+input("Press Enter to read from the file...")
 # Read result from output file:
 file_for_reading = open('output_file.txt')
 print('\nRead from closed and opened for reading file:\n')
