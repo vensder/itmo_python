@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 # student: Dmitry Makarov
 
 import os # import of os module
 
-# check current version of Python
+# checking for current version of Python
 import platform
-print(platform.python_version())
+print('Current version of Python is: ' + platform.python_version() + '\n')
 
-'''
+''' Some suitables paths:
 /usr/bin/
 /usr/lib/
 /etc/
@@ -24,35 +23,37 @@ dir_path='/usr/bin/'
 find_name='python'
 files_number = 0
 
-#print (os.listdir(dir_path)) # list of files and dirs in current dir
-
+#print (os.listdir('.')) # list of files and dirs in current dir
 
 # open file for writing, create it if doesn't exist, truncate it if exists ('w+')
 file_for_writing = open('output_file.txt', 'w+')
 
-current_message = 'We found these files in dir "' + dir_path +'", which names include substring "python":\n'
-
+# print and write first message:
+current_message = ('We found these files in dir "' + 
+    dir_path +'", which names include substring "python":\n')
 print(current_message)
 file_for_writing.write(current_message)
 
-# Find files with including find_name 
+# Loop for finding files with include searching word
 for file_name in os.listdir(dir_path):
     if file_name.find(find_name) != -1:
+        # print current filename on screen
         print(file_name)
+        # write current filename to file
         file_for_writing.write(file_name + '\n')
         # increment number of found files
-        #files_number = files_number + 1
+        # files_number = files_number + 1
         files_number += 1
 
+# Print and write numbers of founding files:
 current_message = '\nNumber of files is:' + str(files_number)
 print(current_message)
 file_for_writing.write(current_message)
 file_for_writing.close()
 
 input("Press Enter to continue...")
-
-    
+# Read result from output file:
 file_for_reading = open('output_file.txt')
 print('\nRead from closed and opened for reading file:\n')
 print(file_for_reading.read())
-
+file_for_reading.close()
