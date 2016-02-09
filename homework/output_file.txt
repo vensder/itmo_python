@@ -1,4 +1,4 @@
-We found these files in dir "/usr/bin/", which names include substring "python":
+We found these files in dir "/usr/bin", which names include substring "python":
 python2.7
 python2-pbr
 python3.5m
@@ -11,4 +11,4 @@ x86_64-linux-gnu-python2.7-config
 python3m
 python3.5
 
-Number of files is:11
+Number of files is:11. Number of words is: 11

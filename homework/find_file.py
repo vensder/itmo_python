@@ -19,9 +19,10 @@ print('Current version of Python is: ' + platform.python_version() + '\n')
 '''
 
 # variables:
-dir_path='/usr/bin/'
+dir_path='/usr/bin'
 find_name='python'
 files_number = 0
+word_number = 0
 
 #print (os.listdir('.')) # list of files and dirs in current dir
 
@@ -44,9 +45,10 @@ for file_name in os.listdir(dir_path):
         # increment number of found files
         # files_number = files_number + 1
         files_number += 1
+        word_number = word_number + file_name.count(find_name)
 
 # Print and write numbers of founding files:
-current_message = '\nNumber of files is:' + str(files_number)
+current_message = '\nNumber of files is:' + str(files_number) + '. Number of words is: ' + str(word_number)
 print(current_message)
 file_for_writing.write(current_message)
 file_for_writing.close()
