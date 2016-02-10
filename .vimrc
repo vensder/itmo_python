@@ -5,3 +5,7 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+
+"match Search /\%(\_^\s*\)\@<=\%(\%1v\|\%5v\|\%9v\)\s/
+"set cc=80

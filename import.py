@@ -8,4 +8,14 @@ print (os.listdir('../.')) # list of files and dirs in current dir
 for file in os.listdir('..'):
     print (file)
 #    print ('---ku-ku---')
+    test
+        test
+            test
+        test
+    test
+test
+    test
+    test
+        test
+        test
 
