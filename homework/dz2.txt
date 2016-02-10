@@ -1,0 +1,9 @@
+make the app 'students_list.py'
+
+1. List
+2. fill it ours names and sernames
+
+x = input()
+
+
+
