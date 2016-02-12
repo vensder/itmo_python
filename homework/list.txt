@@ -1,0 +1,8 @@
+Ivanov Ivan
+Ivanov Stanislav
+Petrov Ivan
+Ivanov Petr
+Petrov Petr
+Sidorov Petr
+Sidorov Ivan
+
