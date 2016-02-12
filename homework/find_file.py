@@ -54,7 +54,7 @@ file_for_writing.write(current_message)
 file_for_writing.close()
 
 input("Press Enter to read from the file...")
-# Read result from output file:
+# Read result from output file for testing:
 file_for_reading = open('output_file.txt')
 print('\nRead from closed and opened for reading file:\n')
 print(file_for_reading.read())
