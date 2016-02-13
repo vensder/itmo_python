@@ -4,25 +4,22 @@
 language = input('Choise the language: type "en" for English or type "ru" for Russian:\n')
 
 #1
-students = [
-        'Ivanov Ivan',
-        'Ivanov Stanislav',
-        'Petrov Ivan',
-        'Ivanov Petr',
-        'Petrov Petr',
-        'Sidorov Petr',
-        'Sidorov Ivan',]
-
 if language == 'ru':
-    students = [
-            'Иванов Иван',
-            'Иванов Станислав',
-            'Петров Иван',
-            'Иванов Петр',
-            'Петров Петр',
-            'Сидоров Петр',
-            'Сидоров Иван',
-            ]
+    students = ['Иванов Иван',
+                'Иванов Станислав',
+                'Петров Иван',
+                'Иванов Петр',
+                'Петров Петр',
+                'Сидоров Петр',
+                'Сидоров Иван',]
+else:
+    students = ['Ivanov Ivan',
+                'Ivanov Stanislav',
+                'Petrov Ivan',
+                'Ivanov Petr',
+                'Petrov Petr',
+                'Sidorov Petr',
+                'Sidorov Ivan',]
 
 quantity = len(students)
 
