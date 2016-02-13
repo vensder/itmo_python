@@ -43,6 +43,5 @@ for i in range(1,len(list0),2):
 for i in range(len(list0)):
     print(list0[i])
 
-#print(list0)
 
 
