@@ -40,6 +40,9 @@ for i in range(1,len(list0),2):
         if students[j][1] == list0[i-1] and not students[j][0] in list0[i]:
             list0[i].append(students[j][0])
 
-print(list0)
+for i in range(len(list0)):
+    print(list0[i])
+
+#print(list0)
 
 

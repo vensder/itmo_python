@@ -27,9 +27,9 @@ if language == 'ru':
 quantity = len(students)
 
 if language == 'ru':
-    print('Список студентов:')
+    print('\nСписок студентов:')
 else:
-    print('Students list:')
+    print('\nStudents list:')
 for i in range(quantity):
     print(str(i+1)+'.',students[i])
 
@@ -52,17 +52,26 @@ if not (0 <= index < quantity):
     quit()
 
 if language == 'ru':
-    print('Вы ввели номер:', index+1)
-    print('Студент под номером ' + str(index+1) + ':', students[index])
+    print('\nВы ввели номер:', index+1)
+    print('\nСтудент под номером ' + str(index+1) + ':', students[index])
 else:
-    print('Your number is:', index+1)
-    print('Student with number', index+1, 'is', students[index])
+    print('\nYour number is:', index+1)
+    print('\nStudent with number', index+1, 'is', students[index])
 
 #3
-print('Input range of students numbers in format "x-y", where x is begin, y is end of range:')
+if language == 'ru':
+    print('\nВведите диапазон номеров студентов в формате "x-y", где x - начало, а y - конец диапазона')
+else:
+    print('\nInput range of students numbers in format "x-y", where x is begin, y is end of range:')
+
 students_range = input().split('-')
 begin = int(students_range[0])
 end = int(students_range[1])
+
+if language == 'ru':
+    print('\nДиапазон студентов(срез):')
+else:
+    print('\nRange of students(slice):')
 print(students[begin-1:end])
 
 #4
@@ -77,23 +86,46 @@ else:
             i+=1
 
 if language == 'ru':
-    print('Количество студентов с буквой "р":', i)
+    print('\nКоличество студентов с буквой "р":', i)
 else:
-    print('Quantity of students with letter "r" is:', i)
+    print('\nQuantity of students with letter "r" is:', i)
 
 #5
 # Split each element of list to list whith Surname, Name
 for i in range(len(students)):
     students[i] = students[i].split(' ')
 
-list0 = [students[0]]
-for i in range(1,len(students)):
-    print(students[i])
-    if students[0][1] == students[i][1]:
-        list0.append(students[i])
-#        print(students[i+1])
-print(list0)
+# Way # 1
+# Create/truncate file with name 'group_Name'
+for i in range(len(students)):
+    f = open('group_' + students[i][1],'w')
+    f.close()
 
+# Append Surname to file 'group_Name'
+for i in range(len(students)):
+    f = open('group_' + students[i][1],'a')
+    f.write(students[i][0] + '\n')
+    f.close()
 
-print(students)
+# Way # 2
+list0 = []
+# get list with uniq names, insert empty list after each name
+for i in range(len(students)):
+    if not students[i][1] in list0:
+        list0.append(students[i][1])
+        list0.append([])
+#print(list0)
 
+# insert in each empty nested list surname after name
+for i in range(1,len(list0),2):
+    for j in range(len(students)):
+        if students[j][1] == list0[i-1] and not students[j][0] in list0[i]:
+            list0[i].append(students[j][0])
+
+#print name and surnames
+if language == 'ru':
+    print('\nГруппы студентов по именам:')
+else:
+    print('\nGroups of students by their names:')
+for i in range(len(list0)):
+    print(list0[i])
