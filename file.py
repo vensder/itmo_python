@@ -13,7 +13,7 @@ f = open('my_file.txt','w') # open for writing, truncating the file firs
 f.write('write1\n')
 f.close()
 
-f = open('my_file.txt','a') # open for writing, appending to the end of the file if it exists
+f = open('my_dir/my_file.txt','a') # open for writing, appending to the end of the file if it exists
 f.write('write2\n')
 f.write('write3\n')
 f.close()
