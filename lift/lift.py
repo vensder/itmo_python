@@ -20,8 +20,12 @@ for i in('small','large'):
         f.close()
 
 # on which flor are lifts
-small_lift = 1
-large_lift = 1
+a = {}
+for i in ('small','large'):
+    f = open(i + '.lift')
+    a[i] = int(f.read())
+
+print(a)
 
 start_flour = input('On which flour are you placed?\n')
 
