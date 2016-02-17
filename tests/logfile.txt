@@ -1,0 +1,64 @@
+127.0.0.1 - - [15/Feb/2016 16:38:46] code 400, message Bad request syntax ('asdfsdf')
+127.0.0.1 - - [15/Feb/2016 16:38:46] "asdfsdf" 400 -
+127.0.0.1 - - [15/Feb/2016 16:38:49] code 400, message Bad request syntax ('asdfasdfasf')
+127.0.0.1 - - [15/Feb/2016 16:38:49] "asdfasdfasf" 400 -
+127.0.0.1 - - [15/Feb/2016 16:38:51] code 400, message Bad request syntax ('eee')
+127.0.0.1 - - [15/Feb/2016 16:38:51] "eee" 400 -
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+127.0.0.1 - - [15/Feb/2016 16:39:59] code 400, message Bad request syntax ('sdfg')
+127.0.0.1 - - [15/Feb/2016 16:39:59] "sdfg" 400 -
+127.0.0.1 - - [15/Feb/2016 16:40:01] code 400, message Bad request syntax ('asdfas')
+127.0.0.1 - - [15/Feb/2016 16:40:01] "asdfas" 400 -
+127.0.0.1 - - [15/Feb/2016 16:40:02] code 400, message Bad request syntax ('asdf')
+127.0.0.1 - - [15/Feb/2016 16:40:02] "asdf" 400 -
+127.0.0.1 - - [15/Feb/2016 16:40:03] code 400, message Bad request syntax ('asdf')
+127.0.0.1 - - [15/Feb/2016 16:40:03] "asdf" 400 -
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+127.0.0.1 - - [15/Feb/2016 16:41:22] code 400, message Bad request syntax ('adsfasdf')
+127.0.0.1 - - [15/Feb/2016 16:41:22] "adsfasdf" 400 -
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "http2.py", line 13, in <module>
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
