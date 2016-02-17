@@ -7,16 +7,26 @@ data = {a: {}}
 
 s = set()
 s.update(['ловит мышей'])
-data.update(кот = s)
+#data.update(кот = s)
+data[a] = s
 s.update(['живет дома'])
-data.update(кот = s)
-
-
-#data.update(кит = {})
-a = 'плавает в океане'
-data.update(кит = {a})
+data[a] = s
 print(data)
+
+a = 'кит'
+s = set()
+#data.update(кит = {})
+s.update(['плавает в океане'])
+#data.update(кит = {a})
+data[a] = s
+print(data)
+
+import pickle
+pickle.dump(data, open('data.p','wb'))
 quit()
+
+data2 = pickle.load(open("data.p","rb"))
+print(data2)
 
 def choice():
     choice = input('Да (Enter, 1, Y, y) / Нет (0, N, n)\n')
