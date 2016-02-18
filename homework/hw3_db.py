@@ -50,4 +50,31 @@ except FileNotFoundError:
     with open('data.p','wb') as f:
         pickle.dump(data,f)
 
+# Поиск по ключу
+print('Кто вас интересует?')
+for i in data.keys():
+    print(i)
+print('Введите название объекта')
+data_object = input()
+
+# Выдача информации об объекте по ключу
+if data_object in data.keys():
+    print(data_object + ':')
+    print(data.get(data_object))
+else:
+    print('про ' + data_object + ' ничего не знаем')
+
+# Поиск по значению
+
+print('\nЗнаете, кто умеет: ')
+for i in data.values():
+    print(i)
+print('?')
+
+print('Введите действие:') 
+data_value = input()
+
+
+
+
 
