@@ -32,7 +32,3 @@ students_names_r = l_names_r(students_names)
 # Количество студентов с буквой "р" в имени - это длина полученного списка:
 print(len(students_names_r))
 
-
-
-
-#4.2. задание по БД - через def
