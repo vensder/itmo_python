@@ -1,14 +1,13 @@
 We found these files in dir "/usr/bin", which names include substring "python":
-python2.7
-python2-pbr
-python3.5m
-python2
-python
 dh_python3
+python
+python2
 python3
 dh_python2
 x86_64-linux-gnu-python2.7-config
-python3m
+python3.5m
+python2.7
 python3.5
+python3m
 
-Number of files is:11. Number of words is: 11
+Number of files is:10. Number of words is: 10
