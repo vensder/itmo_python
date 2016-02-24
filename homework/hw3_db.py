@@ -51,10 +51,11 @@ except FileNotFoundError:
         pickle.dump(data,f)
 
 # Поиск по ключу
-print('Кто вас интересует?')
+print('Хотите узнать, что делают:')
 for i in data.keys():
     print(i)
-print('Введите название объекта')
+print('?')
+print('Введите кого-нибудь:')
 data_object = input()
 
 # Выдача информации об объекте по ключу
@@ -66,15 +67,32 @@ else:
 
 # Поиск по значению
 
-print('\nЗнаете, кто умеет: ')
+print('\nЗнаете, кто: ')
 for i in data.values():
     print(i)
 print('?')
 
-print('Введите действие:') 
-data_value = input()
+print('Введите вопрос, например:') 
+print('Кто ест планктон?')
+question = input()
 
+#Кто ходит на лекции?
 
+found = False
+for subj, actions in data.items():
+    for action in actions:
+        if action in question:
+            print(subj)
+            found = True
+
+for subj in data.keys():
+    for action in data.get(subj):
+        if action in question:
+            print(subj)
+            found = True
+
+if not found:
+    print('Извините, но мы не знаем, ' + question.lower())
 
 
 
