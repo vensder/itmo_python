@@ -1,0 +1,9 @@
+done:
+task1 test sdfsadf asdfasdf
+task2 test test sdf sdf
+
+problems:
+NO prob
+
+todo:
+Task 3 I will do late

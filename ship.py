@@ -21,8 +21,8 @@ from random import randint
 area = [[0 for i in range(10)] for i in range(10)]
 
 def print_area():
-	for r in area:
-		print(r)
+    for r in area:
+        print(r)
 
 cells4 = 4
 cells3 = 3
@@ -34,13 +34,18 @@ ship3v = [1 for i in range(cells3)]
 ship2v = [1 for i in range(cells2)]
 ship1v = [1 for i in range(cells1)]
 
-def insertv(cellsx):
-	x = randint(0,9)
-	y = randint(0,(9-(cellsx-1)))
-	area[y][x:x+cellsx] = [1 for i in range(x)]
+def insertv(decks_number):
+    x = randint(0,(9-(decks_number-1)))
+    y = randint(0,9)
+    area[y][x:x+decks_number] = [1 for i in range(decks_number)]
+    print(ship4v)
+    print(x)
+    print(y)
 
+    
 # insert ship4v
 insertv(4)
+insertv(3)
 #y = randint(0,9)
 #x = randint(0,(9-(cells4-1)))
 #area[y][x:x+cells4] = ship4v
