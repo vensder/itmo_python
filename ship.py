@@ -22,7 +22,8 @@ area = [[0 for i in range(10)] for i in range(10)]
 # Count quantity of random generation x,y
 iterations = 0
 
-def print_area():
+# Print battle fild
+def print_area(area):
     for r in area:
         print(r)
 
@@ -41,8 +42,8 @@ def generate_xy(decks_number):
 # insert ship in x,y, if there is 0
 def insert_horizontal(decks_number):
     x,y = generate_xy(decks_number)
-    # Regenerate x,y while here is not 0
-    while area[y][x] != 0:
+    # Regenerate x,y while we would not find the free area for ship
+    while sum(area[y][x:x+decks_number]) != 0:
         x,y = generate_xy(decks_number)
     
     # Insert row with '2' above ship, if it is not first row
@@ -88,8 +89,41 @@ insert_horizontal(1)
 insert_horizontal(1)
 insert_horizontal(1)
 
-print_area()
+print_area(area)
+
+print('\n--------------------\n')
 
 print('Iterations: ', iterations)
 
+print('\n--------------------\n')
 
+# print area with ships without '2'
+area2 = [[0 for i in range(10)] for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        if area[i][j] == 1:
+            area2[i][j] = 1
+print_area(area2)
+print('\n--------------------\n')
+
+# Matrix transpons (area2 -> area3)
+area3 = [[0 for i in range(10)] for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        area3[i][j] = area2[j][i]
+print_area(area3)
+
+# pseudo ascii
+area4 = [['-' for i in range(10)] for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        if area[i][j] == 1:
+            area4[i][j] = 'x'
+print_area(area4)
+
+print('\n--------------------\n')
+
+# print pseudo ascii battle fild with ships
+for ll in area4:
+    print(' '.join(ll))
+    
