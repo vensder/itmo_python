@@ -39,6 +39,13 @@ def transpon_matrix(matrix):
 #cells<N> = N
 #ship<N>v = [1 for i in range(cells<N>)]
 
+def transpon_random(matrix):
+    if randint(0,1) == 1:
+        matrix = transpon_matrix(matrix)
+        return matrix
+    else:
+        return matrix
+
 # Generate x,y coord for ship with decks = decks_number
 def generate_xy(decks_number):
     x = randint(0, dimensions - decks_number)
@@ -86,32 +93,16 @@ def insert_horizontal(decks_number):
 # insert ship4v
 insert_horizontal(4)
 
-if randint(0,1) == 1:
-    area = transpon_matrix(area)
+for i in range(2):
+    area = transpon_random(area)
+    insert_horizontal(3)
 
-insert_horizontal(3)
+for i in range(3):
+    area = transpon_random(area)
+    insert_horizontal(2)
 
-if randint(0,1) == 1:
-    area = transpon_matrix(area)
-
-insert_horizontal(3)
-if randint(0,1) == 1:
-    area = transpon_matrix(area)
-
-insert_horizontal(2)
-if randint(0,1) == 1:
-    area = transpon_matrix(area)
-
-insert_horizontal(2)
-if randint(0,1) == 1:
-    area = transpon_matrix(area)
-
-insert_horizontal(2)
-
-insert_horizontal(1)
-insert_horizontal(1)
-insert_horizontal(1)
-insert_horizontal(1)
+for i in range(4):
+    insert_horizontal(1)
 
 print_area(area)
 
@@ -131,13 +122,12 @@ print_area(area2)
 print('\n--------------------\n')
 
 # Matrix transpons (area2 -> area3)
-area3 = [[0 for i in range(dimensions)] for i in range(dimensions)]
+#area3 = [[0 for i in range(dimensions)] for i in range(dimensions)]
+area3 = area2
 for i in range(dimensions):
     for j in range(dimensions):
         area3[i][j] = area2[j][i]
 print_area(area3)
-
-
 
 # pseudo ascii
 area4 = [['-' for i in range(dimensions)] for i in range(dimensions)]
