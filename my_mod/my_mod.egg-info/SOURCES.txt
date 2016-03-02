@@ -1,0 +1,8 @@
+README.txt
+setup.py
+my_mod.egg-info/PKG-INFO
+my_mod.egg-info/SOURCES.txt
+my_mod.egg-info/dependency_links.txt
+my_mod.egg-info/top_level.txt
+my_sub_mod/__init__.py
+my_sub_mod/core.py
