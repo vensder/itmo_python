@@ -16,19 +16,20 @@ xxx-------
 
 from random import randint
 
-dimensions = 10
+dimensions = 10 # dimensions of the field
 
-# generating area 10 x 10
+# generating area dim x dim (10 x 10)
 area = [[0 for i in range(dimensions)] for i in range(dimensions)]
 
 # Count quantity of random generation x,y
 iterations = 0
 
-# Print battle fild
+# Print battle field
 def print_area(area):
     for r in area:
-        print(r)
+        print(' '.join(r))
 
+# transpose the matrix
 def transpon_matrix(matrix):
     matrix_t = [[0 for i in range(dimensions)] for i in range(dimensions)]
     for i in range(dimensions):
@@ -39,6 +40,7 @@ def transpon_matrix(matrix):
 #cells<N> = N
 #ship<N>v = [1 for i in range(cells<N>)]
 
+# call the transpon_matrix() with 50% of probability
 def transpon_random(matrix):
     if randint(0,1) == 1:
         matrix = transpon_matrix(matrix)
@@ -46,7 +48,7 @@ def transpon_random(matrix):
     else:
         return matrix
 
-# Generate x,y coord for ship with decks = decks_number
+# Generate x,y coordinates for ship with decks = decks_number
 def generate_xy(decks_number):
     x = randint(0, dimensions - decks_number)
     y = randint(0, dimensions - 1)
@@ -55,7 +57,7 @@ def generate_xy(decks_number):
     iterations += 1
     return(x,y)
     
-# insert ship in x,y, if there is 0
+# insert horizontal ship in x,y, if there is 0
 def insert_horizontal(decks_number):
     x,y = generate_xy(decks_number)
     # Regenerate x,y while we would not find the free area for ship
@@ -89,57 +91,35 @@ def insert_horizontal(decks_number):
         if x < (dimensions - decks_number-1):
             area[y+1][x+decks_number] = 2
                 
-    
-# insert ship4v
+# convert field with 0,1,2 to ascii (---xxx--)
+def convert_to_ascii(area):
+    ascii_area = [['-' for i in range(dimensions)] for i in range(dimensions)]
+    for i in range(dimensions):
+        for j in range(dimensions):
+            if area[i][j] == 1:
+                ascii_area[i][j] = 'x'
+    return(ascii_area)
+
+# insert ship with 4 decks
 insert_horizontal(4)
 
+# transponse matrix random befor insert each 2 ship with 3 decks
 for i in range(2):
     area = transpon_random(area)
     insert_horizontal(3)
 
+# transponse matrix random befor insert each 3 ship with 2 decks
 for i in range(3):
     area = transpon_random(area)
     insert_horizontal(2)
 
+# insert 4 ship with 1 deck
 for i in range(4):
     insert_horizontal(1)
 
+area = convert_to_ascii(area)
 print_area(area)
 
-print('\n--------------------\n')
-
+print('\n-------------------\n')
 print('Iterations: ', iterations)
 
-print('\n--------------------\n')
-
-# print area with ships without '2'
-area2 = [[0 for i in range(dimensions)] for i in range(dimensions)]
-for i in range(dimensions):
-    for j in range(dimensions):
-        if area[i][j] == 1:
-            area2[i][j] = 1
-print_area(area2)
-print('\n--------------------\n')
-
-# Matrix transpons (area2 -> area3)
-#area3 = [[0 for i in range(dimensions)] for i in range(dimensions)]
-area3 = area2
-for i in range(dimensions):
-    for j in range(dimensions):
-        area3[i][j] = area2[j][i]
-print_area(area3)
-
-# pseudo ascii
-area4 = [['-' for i in range(dimensions)] for i in range(dimensions)]
-for i in range(dimensions):
-    for j in range(dimensions):
-        if area[i][j] == 1:
-            area4[i][j] = 'x'
-print_area(area4)
-
-print('\n--------------------\n')
-
-# print pseudo ascii battle fild with ships
-for ll in area4:
-    print(' '.join(ll))
-    
