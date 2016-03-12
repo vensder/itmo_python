@@ -27,13 +27,24 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=5
+current_page=16
 FILE_NAME_0=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fmy_mod%2Fmy_sub_mod%2F__init__.py;0;4
 FILE_NAME_1=107;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fmy_mod%2Fmy_sub_mod%2Fcore.py;0;4
 FILE_NAME_2=70;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fmy_mod%2Fsetup.py;0;4
 FILE_NAME_3=1;None;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fmy_mod%2FREADME.txt;0;4
-FILE_NAME_4=520;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fhw5.py;0;4
+FILE_NAME_4=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fhw5.py;0;4
 FILE_NAME_5=428;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fhtml1.py;0;4
+FILE_NAME_6=185;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fspisok_spiskov.py;0;4
+FILE_NAME_7=504;None;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fdocs%2Fhw5-6.txt;0;4
+FILE_NAME_8=664;Python;0;EUTF-8;0;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fhw6_csv.py;0;4
+FILE_NAME_9=141;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fcsv1.py;0;4
+FILE_NAME_10=238;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fzadanie.py;0;4
+FILE_NAME_11=170;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fbattleship.py;0;4
+FILE_NAME_12=539;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fbattleship_generators.py;0;4
+FILE_NAME_13=678;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fmy_class.py;0;4
+FILE_NAME_14=132;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fnasledovanie.py;0;4
+FILE_NAME_15=265;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fnasledovanie2.py;0;4
+FILE_NAME_16=1070;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fnasledovanye3.py;0;4
 
 [VTE]
 last_dir=/home/vensder/git/py_hw_2016
