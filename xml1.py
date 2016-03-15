@@ -29,6 +29,8 @@ root = ET.fromstring(xml)
 # root = tree.getroot() # получаем корневой эл
 print(root)
 
+#quit()
+
 root[0][1].text = str(3012)
 root[0][3].text = 'testtest'
 

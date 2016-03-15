@@ -19,8 +19,6 @@ class Circle:
         if r < 0:
             raise ValueError('Radius should be nonnegative')
         self._r = r
-    
-    
 
 c = Circle(0, 0, 1)
 print(c.x)
