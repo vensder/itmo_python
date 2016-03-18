@@ -27,7 +27,11 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=-1
+current_page=0
+FILE_NAME_0=466;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpython-rtmbot%2Fplugins%2Ftelegram%2Fhttp_get.py;0;4
+FILE_NAME_1=24;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpython-rtmbot%2Fplugins%2Frepeat%2Frepeat.py;0;4
+FILE_NAME_2=7877;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpython-rtmbot%2Frtmbot.py;0;4
+FILE_NAME_3=16;Conf;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpython-rtmbot%2Fplugins%2Ftelegram%2Ftelegram.conf;0;4
 
 [VTE]
 last_dir=/home/vensder/git/py_hw_2016
