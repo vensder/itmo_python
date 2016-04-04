@@ -17,7 +17,7 @@ class Color:
 
     string = ''
 
-    def to_rgb(self, string):
+    def to_rgb(self):
 		
         hex_string = self.string.lstrip('#')
         
@@ -43,15 +43,15 @@ class Blue(Color):
 
 green = Green()
 print(green.string)
-print(green.to_rgb(green.string))
+print(green.to_rgb())
 
 red = Red()
 print(red.string)
-print(red.to_rgb(red.string))
+print(red.to_rgb())
 
 blue = Blue()
 print(blue.string)
-print(blue.to_rgb(blue.string))
+print(blue.to_rgb())
 
 
 class Line:

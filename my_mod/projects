@@ -28,8 +28,13 @@ long_line_column=72
 
 [files]
 current_page=1
-FILE_NAME_0=135;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fsimple_chat.py;0;4
-FILE_NAME_1=339;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Fthread_critical.py;0;4
+FILE_NAME_0=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffin_work%2Fcolor_work.py;0;4
+FILE_NAME_1=819;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffin_work%2Fjson_work.py;0;4
+FILE_NAME_2=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffin_work%2Fsee_work.py;0;4
+FILE_NAME_3=150;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffin_work%2Fstart_work.py;0;4
+FILE_NAME_4=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffin_work%2Fzadachi.py;0;4
+FILE_NAME_5=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fitmo_python%2Ffile.py;0;4
+FILE_NAME_6=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fvensder%2Fgit%2Fpy_hw_2016%2Fhw6_csv.py;0;4
 
 [VTE]
-last_dir=/home/vensder/git/itmo_python
+last_dir=/home/vensder/git/itmo_python/fin_work

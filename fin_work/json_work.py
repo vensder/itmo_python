@@ -13,6 +13,7 @@ cities = {
     }
 }
 
+
 # Написать функцию, которая без использования
 # стандартного или стороннего модуля json
 # запишет входной словарь такого формата
@@ -29,6 +30,41 @@ cities = {
         "size": 28003000
     }
 }
+
+
+print(cities)
+
+def format_to_json(cities):
+
+	format_json = str(cities).replace('\'','"')
+
+	format_json = format_json.replace('{', '{\n    ')
+
+	format_json = format_json.replace('}}', '\n    }\n}')
+
+	format_json = format_json.replace('}, "', '},\n    "')
+
+	format_json = format_json.replace(', "',',\n    "')
+
+	format_json = format_json.replace('"pos"','    "pos"')
+
+	format_json = format_json.replace('"size"','    "size"')
+
+	format_json = format_json.replace('},', '\n    },') 
+	
+	return format_json
+
+
+
+my_cool_string = format_to_json(cities)
+
+print(my_cool_string)
+
+with open ('cities.json', 'w') as output_file:
+	output_file.write(my_cool_string)
+	
+
+
 
 # 2. Создадим свою замену классам,
 # использванным в этом словаре (словарь, строка, список, числа..).
